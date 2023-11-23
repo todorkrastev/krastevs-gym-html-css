@@ -1,4 +1,5 @@
-@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+/*@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 @import url("./reset.css");
 @import url("./typography.css");
 @import url("./components.css");
@@ -25,6 +26,7 @@
   --color-dark-gray: #222222;
   --color-black: black;
   --color-grey: #303030;
+
   /*
   --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -217,7 +219,7 @@ body {
 
 @media screen and (min-width: 375px) {
   .hero__title {
-    font-size: 4.5rem;
+    font-size: 2.813rem;
   }
 
   .btn {
@@ -265,6 +267,10 @@ body {
 
   .basket i {
     color: var(--color-white);
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
   }
 
   .hero__subtitle {
@@ -334,10 +340,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  html {
-    font-size: 1.125rem;
-  }
-
   .header__navigation {
     visibility: visible;
   }
