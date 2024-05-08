@@ -25,16 +25,16 @@
       </a>
       <nav class="header__navigation">
         <!-- <div id="guest">
-          <a href="/users/login" class="btn">Sign in</a>
-          <a href="/users/login" class="btn">Log in</a>
-        </div> -->
+        <a href="/users/login" class="btn">Sign in</a>
+        <a href="/users/login" class="btn">Log in</a>
+      </div> -->
 
         <!--<div id="user">
-          <a href="/users/login" class="btn">Classes</a>
-          <a href="/users/login" class="btn">Exercises</a>
-          <a href="/users/login" class="btn">Products</a>
-          <a href="/users/login" class="btn"><i class="fab fa-instagram"></i></a>
-        </div> -->
+        <a href="/users/login" class="btn">Classes</a>
+        <a href="/users/login" class="btn">Exercises</a>
+        <a href="/users/login" class="btn">Products</a>
+        <a href="/users/login" class="btn">Nutrition</a>
+      </div> -->
 
         <div id="admin">
           <a href="/users/login" class="btn">Activities</a>
@@ -44,49 +44,29 @@
           <a href="/users/login" class="btn">Products</a>
           <a href="/users/login" class="basket btn"><i class="fas fa-shopping-basket"></i></a>
         </div>
-
-        <!-- <div id="admin" class="navigation__container">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Activites</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Applicants</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Classes</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Exercises</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Products</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="basket btn"><i class="fas fa-shopping-basket"></i></a>
-            </li>
-          </ul>
-        </div>-->
-
       </nav>
     </div>
 
   </header>
-  
+
   <main>
-    <section id="login">
-      <form method="POST" class="hero__form--login">
-        <h1 class="hero__form--login__title">Sign In</h1>
-
-        <input name="username" class="hero__form--login__field" placeholder="Username" type="text" minlength="1"
-          maxlength="50" required value="">
-
-        <input name="password" class="hero__form--login__field" placeholder="Password" type="password" minlength="6"
-          maxlength="62" required value="">
-
-        <button type="submit" class="hero__login--submit btn">Submit</button>
-      </form>
-      <p class="hero__login--register">New to Krastev's Gym? <a href="/register.html">Sign up now.</a></p>
+    <section id="register">
+      <form method="POST" class="hero__form--register">
+        <form method="POST" class="hero__form--register">
+          <h1 class="hero__form--register__title">Register</h1>
+          <input name="email" class="hero__form--register__field" placeholder="Email" type="email" minlength="5"
+            maxlength="50" required value="">
+          <input name="password" class="hero__form--register__field" placeholder="Password" type="password"
+            minlength="6" maxlength="62" required value="">
+          <input name="password" class="hero__form--register__field" placeholder="Repeat Password" type="password"
+            minlength="6" maxlength="62" required value="">
+          <button type="submit" class="hero__register--submit btn">Submit</button>
+        </form>
+        <div class="hero__register--register">
+          <p class="hero__register--terms">By creating an account you agree to our <a href="/index.html">Terms &
+              Privacy.</a></p>
+          <p class="hero__register--login">Already have an account? <a href="/login.html">Sign in.</a></p>
+        </div>
     </section>
 
     <div class="divider"></div>
