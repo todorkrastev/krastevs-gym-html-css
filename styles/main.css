@@ -295,7 +295,7 @@ body {
     font-size: 12px;
   }
 
-  .basket i {
+  .icon i {
     color: var(--color-white);
   }
 
@@ -441,12 +441,12 @@ body {
     transition: color 250ms ease-in-out;
   }
 
-  .header .basket i:hover {
+  .header .icon i:hover {
     color: var(--color-black);
     transition: color 250ms ease-in-out;
   }
 
-  .header .basket:hover {
+  .header .icon:hover {
     background-color: var(--color-primary);
     cursor: pointer;
     transition: color 250ms ease-in-out;
