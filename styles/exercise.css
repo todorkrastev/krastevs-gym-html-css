@@ -84,12 +84,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    #hero .hero__exercises {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .exercises__container {
+    #hero .hero__products {
         max-width: 1200px;
         margin: 0 auto;
     }
