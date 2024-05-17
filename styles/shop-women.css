@@ -1,0 +1,221 @@
+.categories--women {
+  visibility: hidden;
+}
+
+.section--women {
+  padding: 4rem 1rem 3rem;
+}
+
+.shop--women .shop__wrapper--women {
+  margin: 2rem 0;
+  justify-content: center;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.shop--women .shop__card--women {
+  margin-bottom: 1rem;
+}
+
+.shop--women .shop__description,
+.shop--women .shop__price,
+.shop--women .shop__name {
+  text-align: center;
+  padding: 1rem;
+}
+
+.shop__buttons {
+  display: flex;
+  padding: 0.25rem;
+  gap: 13px;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop--women .shop__poster {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  .header .btn {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .header .logo {
+    width: 50px;
+  }
+
+  .header .btn {
+    font-size: 12px;
+  }
+
+  .main__wrapper__women {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+    justify-content: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .category__name--women {
+    text-decoration: none;
+    margin-bottom: 0.50rem;
+  }
+
+  .categories__wrapper--women {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .categories--women {
+    visibility: visible;
+    padding: 5rem 0 3rem;
+  }
+
+  .category__name--women:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+  }
+
+  .shop--women {
+    justify-content: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .section--women {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .shop--women:nth-of-type(2n + 1) {
+    flex-direction: row-reverse;
+  }
+
+  .shop--women .shop__wrapper--women {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .shop--women .shop__wrapper--women {
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .shop--women .shop__wrapper--women,
+  .shop--women .shop__poster {
+    width: 95%;
+  }
+
+  .shop--women .shop__description {
+    text-align: center;
+  }
+
+  .shop--women .shop__poster {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1.125rem;
+  }
+
+  .header .btn {
+    font-size: 15px;
+  }
+
+  .shop--women .navi {
+    width: 80%;
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .categories--women {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .section--women {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .shop--women .shop__wrapper--women {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .header .logo {
+    width: 60px;
+  }
+
+
+  .btn {
+    /*
+    padding: 0.25rem 0.875rem;
+    background-color: var(--color-primary);
+    color: var(--color-dark-gray);
+    */
+    padding: 0.25rem 0.875rem;
+    border: 2px solid transparent;
+  }
+
+  .header .btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header .logo {
+    width: 65px;
+  }
+
+  .header .btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .header .logo {
+    width: 70px;
+  }
+
+  .header .btn {
+    font-size: 18px;
+  }
+}
