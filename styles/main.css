@@ -296,6 +296,21 @@ body {
     font-size: 12px;
   }
 
+  .header__navigation {
+    visibility: visible;
+  }
+
+  .sign__in {
+    background-color: var(--color-primary);
+    border: 2px solid transparent;
+    color: var(--color-dark-gray);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
   .icon i {
     color: var(--color-white);
   }
@@ -371,10 +386,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .header__navigation {
-    visibility: visible;
-  }
-
   .header .btn {
     font-size: 1rem;
   }
@@ -437,6 +448,14 @@ body {
 
   .header .btn:hover {
     background-color: transparent;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+  }
+
+  .sign__in:hover {
+    background-color: transparent;
+    color: var(--color-primary);
     border: 2px solid var(--color-primary);
     cursor: pointer;
     transition: color 250ms ease-in-out;
