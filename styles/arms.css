@@ -1,4 +1,4 @@
-#hero .img--bg--arms {
+#hero .img--bg--abs {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -9,29 +9,27 @@
     opacity: 0.5;
 }
 
-#hero .hero__arms {
+#hero .hero__abs {
     position: relative;
     z-index: 3;
 }
 
 
-#hero .hero__title__arms {
+#hero .hero__title__abs {
     color: var(--color-primary);
     font-weight: 700;
     padding: 0.75rem;
 }
 
-#hero .hero__title__arms:nth-child(3n+2) {
+#hero .hero__title__abs:nth-child(3n+2) {
     color: var(--color-white);
 }
 
-.arms {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 12px;
+.exercise--abs {
+    padding: 0.5rem;
 }
 
-.arms__wrapper {
+.exercise__wrapper--abs {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -41,41 +39,41 @@
     text-decoration: none;
 }
 
-.arms__poster {
+.exercise__poster--abs {
     width: 100%;
     border-radius: 5px;
 }
 
-.arms__title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 1rem 0 0;
+.exercise__title--abs {
+    margin-top: 1rem;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width: 768px) {
-    .arms {
+    .exercises__container--abs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
-    #hero .hero__title__arms {
+    #hero .hero__title__abs {
         text-align: start;
     }
 
-    #hero .hero__arms {
+    #hero .hero__abs {
         width: 80%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    #hero .hero__arms {
+    #hero .hero__abs {
         max-width: 1200px;
     }
 
-    .arms {
+    .exercises__container--abs {
+        grid-template-columns: repeat(4, 1fr);
         max-width: 1200px;
         margin: 0 auto;
     }
