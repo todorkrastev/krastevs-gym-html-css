@@ -26,10 +26,10 @@
       <nav class="header__navigation">
         <div id="guest">
           <a href="/users/login" class="btn">My Trainer</a>
-          <a href="/exercises.html" class="btn">Exercises</a>
+          <a href="/exercise.html" class="btn">Exercises</a>
           <a href="/users/login" class="btn">Workouts</a>
           <a href="/users/login" class="btn">Progress</a>
-          <a href="/shop.html" class="btn">Shop</a>
+          <a href="/users/login" class="btn">Shop</a>
           <a href="/users/login" class="btn">Nutrition</a>
           <a href="/users/login" class="icon btn"><i class="fa-solid fa-circle-user"></i></a>
         </div>
@@ -40,88 +40,49 @@
 
   <main>
     <section id="hero">
-      <img src="/imgs/exercise.jpg" class="img--bg--exercise" alt="Background poster" />
+      <img src="/imgs/exercise.jpg" class="img--bg--back" alt="Background poster" />
 
-      <div class="hero__exercises">
-        <h1 class="hero__title__exercises">Exercises</h1>
+      <div class="hero__back">
+        <!--<h1 class="hero__title__back">Exercises</h1>
+        <h2 class="hero__title__back">Back</h2>-->
+        <h1 class="hero__title__back">Traps</h1>
 
         <div class="hero__exercises__subtitles">
-          <p class="hero__exercises__subtitle">Even if you don't have time to train with us, we support you at any time!
+          <p class="hero__exercises__subtitle">
+            It takes a strong back to lead a strong life!
           </p>
-          <p class="hero__exercises__subtitle">Whether for home or your next visit, our online workouts motivate you and
-            keep you fit.</p>
-          <p class="hero__exercises__subtitle">Together we will reach your goal!</p>
+          <p class="hero__exercises__subtitle">
+            In fact, a weak back is one of the most common causes of back pain and injury.
+          </p>
+          <p class="hero__exercises__subtitle">
+            Is your back strong enough?
+          </p>
         </div>
+
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <div class="exercises__container">
-      <section id="abs" class="exercise section">
-        <a href="/abs.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/abs.gif" alt="Section poster" />
-          <h2 class="exercise__title">Abs</h2>
-        </a>
-      </section>
 
-      <section id="back" class="exercise section">
-        <a href="/back.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/back.gif" alt="Section poster" />
-          <h2 class="exercise__title">Back</h2>
+    <section class="exercises__container--back section">
+      <article class="exercise--back">
+        <a href="/back.html" class="exercise__wrapper--back">
+          <img class="exercise__poster--back" src="/imgs/traps/gifs/barbell-shrug.gif"
+            alt="Section poster" />
+          <h6 class="exercise__title--back">Barbell shrug</h6>
         </a>
-      </section>
+      </article>
 
-      <section id="arms" class="exercise section">
-        <a href="/arms-biceps.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/biceps.gif" alt="Section poster" />
-          <h2 class="exercise__title">Biceps</h2>
+      <article class="exercise--back">
+        <a href="/back.html" class="exercise__wrapper--back">
+          <img class="exercise__poster--back" src="/imgs/traps/gifs/dumbbell-shrug.gif"
+            alt="Section poster" />
+          <h6 class="exercise__title--back">Dumbbell shrug</h6>
         </a>
-      </section>
+      </article>
 
-      <section id="chest" class="exercise section">
-        <a href="/chest.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/chest.gif" alt="Section poster" />
-          <h2 class="exercise__title">Chest</h2>
-        </a>
-      </section>
-
-      <section id="legs" class="exercise section">
-        <a href="/arms-forearms.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/forearms.gif" alt="Section poster" />
-          <h2 class="exercise__title">Forearms</h2>
-        </a>
-      </section>
-
-      <section id="legs" class="exercise section">
-        <a href="/legs.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/legs.gif" alt="Section poster" />
-          <h2 class="exercise__title">Legs</h2>
-        </a>
-      </section>
-
-      <section id="shoulders" class="exercise section">
-        <a href="/shoulders.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/shoulders.gif" alt="Section poster" />
-          <h2 class="exercise__title">Shoulders</h2>
-        </a>
-      </section>
-
-      <section id="shoulders" class="exercise section">
-        <a href="/back-traps.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/traps/gifs/dumbbell-shrug.gif" alt="Section poster" />
-          <h2 class="exercise__title">Traps</h2>
-        </a>
-      </section>
-
-      <section id="shoulders" class="exercise section">
-        <a href="/arms-triceps.html" class="exercise__wrapper">
-          <img class="exercise__poster" src="/imgs/exercises/triceps.gif" alt="Section poster" />
-          <h2 class="exercise__title">Triceps</h2>
-        </a>
-      </section>
-
-    </div>
+    </section>
 
     <div class="divider"></div>
 
@@ -205,6 +166,8 @@
       <p class="rights">Copyright © 2024 Krastev & Waller GmbH. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
