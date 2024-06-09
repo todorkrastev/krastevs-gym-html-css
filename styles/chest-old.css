@@ -1,3 +1,8 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./components.css");
+
 #hero .img--bg--chest {
     object-fit: cover;
     width: 100%;
@@ -25,11 +30,13 @@
     color: var(--color-white);
 }
 
-.exercise--chest {
-    padding: 0.5rem;
+.chest {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
 }
 
-.exercise__wrapper--chest {
+.chest__wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -39,22 +46,23 @@
     text-decoration: none;
 }
 
-.exercise__poster--chest {
+.chest__poster {
     width: 100%;
     border-radius: 5px;
 }
 
-.exercise__title--chest {
-    margin-top: 1rem;
-    text-transform: capitalize;
+.chest__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0 0;
 }
 
 @media screen and (min-width: 768px) {
-    .exercises__container--chest {
+    .chest {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -72,8 +80,7 @@
         max-width: 1200px;
     }
 
-    .exercises__container--chest {
-        grid-template-columns: repeat(4, 1fr);
+    .chest {
         max-width: 1200px;
         margin: 0 auto;
     }
