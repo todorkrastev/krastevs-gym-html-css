@@ -1,3 +1,8 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./components.css");
+
 #hero .img--bg--shoulders {
     object-fit: cover;
     width: 100%;
@@ -25,11 +30,13 @@
     color: var(--color-white);
 }
 
-.exercise--shoulders {
-    padding: 0.5rem;
+.shoulders {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
 }
 
-.exercise__wrapper--shoulders {
+.shoulders__wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -39,22 +46,23 @@
     text-decoration: none;
 }
 
-.exercise__poster--shoulders {
+.shoulders__poster {
     width: 100%;
     border-radius: 5px;
 }
 
-.exercise__title--shoulders {
-    margin-top: 1rem;
-    text-transform: capitalize;
+.shoulders__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0 0;
 }
 
 @media screen and (min-width: 768px) {
-    .exercises__container--shoulders {
+    .shoulders {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -72,8 +80,7 @@
         max-width: 1200px;
     }
 
-    .exercises__container--shoulders {
-        grid-template-columns: repeat(4, 1fr);
+    .shoulders {
         max-width: 1200px;
         margin: 0 auto;
     }
