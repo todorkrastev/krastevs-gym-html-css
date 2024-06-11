@@ -6,13 +6,11 @@
 @import url("./login.css");
 @import url("./register.css");
 @import url("./add-product.css");
-@import url("./add-exercise.css");
 @import url("./add-course.css");
 @import url("./add-activity.css");
 @import url("./shop.css");
 @import url("./shop-women.css");
 @import url("./course.css");
-@import url("./exercises.css");
 @import url("./abs.css");
 @import url("./abs-old.css");
 @import url("./arms-biceps.css");
@@ -25,6 +23,8 @@
 @import url("./back-traps.css");
 @import url("./chest.css");
 @import url("./chest-old.css");
+@import url("./exercise-create.css");
+@import url("./exercises.css");
 @import url("./legs.css");
 @import url("./legs-old.css");
 @import url("./shoulders.css");
