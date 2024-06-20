@@ -49,6 +49,7 @@
 }
 
 .exercises__title {
+    color: var(--color-primary);
     font-size: 1.4rem;
     margin-top: 1rem;
     font-weight: 700;

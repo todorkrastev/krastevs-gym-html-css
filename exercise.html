@@ -86,10 +86,11 @@
 
     <div class="exercise__container section--exercise">
       <section class="exercise">
-        <div class="exercise__wrapper--notes">
-          <textarea name="notes" class="exercise__notes" placeholder="Exercse Notes" type="text" minlength="1"
+        <form method="POST" class="create__note">
+          <textarea name="notes" class="exercise__notes" placeholder="Exercise Notes" type="text" minlength="1"
             maxlength="255" required value=""></textarea>
-        </div>
+          <button type="submit" class="create__note--submit">Submit</button>
+        </form>
       </section>
     </div>
 
