@@ -1,4 +1,4 @@
-#hero .img--bg--exercise {
+#hero .img--bg--exercises {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -33,7 +33,7 @@
     margin-bottom: 0;
 }
 
-.exercise__wrapper {
+.exercises__wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -43,12 +43,12 @@
     text-decoration: none;
 }
 
-.exercise__poster {
+.exercises__poster {
     width: 100%;
     border-radius: 5px;
 }
 
-.exercise__title {
+.exercises__title {
     font-size: 1.4rem;
     margin-top: 1rem;
     font-weight: 700;
