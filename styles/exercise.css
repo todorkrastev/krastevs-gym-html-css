@@ -5,6 +5,11 @@
 
 .exercise__wrapper--info {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .exercise__poster,
@@ -29,6 +34,19 @@
 
 .exercise__wrapper--detailed__info {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exercise__instructions__title {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin: 1rem 0 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
 .exercise__instructions {
@@ -63,13 +81,11 @@
 
 @media screen and (min-width: 768px) {
     .exercise__wrapper--info {
-        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: center;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
     }
 
     .section--exercise__first {
@@ -92,7 +108,10 @@
         align-content: center;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+    }
+
+    .exercise__instructions__title {
+        text-align: start;
     }
 
     .exercise__wrapper--notes {
