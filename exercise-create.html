@@ -46,6 +46,9 @@
         <input name="exerciseName" class="hero__form--create__exercise__field" placeholder="Exercise Name" type="text"
           minlength="1" maxlength="50" required value="">
 
+          <textarea name="description" class="hero__form--create__exercise__field textarea" placeholder="Description" type="text"
+          minlength="1" maxlength="65535" required value=""></textarea>
+
         <select name="categoryName" class="hero__form--create__exercise__field">
           <option class="hero__form--create__exercise__drop" value="">--Exercise Category--</option>
           <option class="hero__form--create__exercise__drop" value="">ABS</option>
@@ -65,8 +68,11 @@
           <option class="hero__form--create__exercise__drop" value="">MACHINES</option>
         </select>
 
-        <textarea name="description" class="hero__form--create__exercise__field" placeholder="Description" type="text"
-        minlength="1" maxlength="255" required value=""></textarea>
+        <input name="videoUrl" class="hero__form--create__exercise__field" placeholder="Video URL" type="text"
+        minlength="1" maxlength="65535" required value="">
+
+        <textarea name="instructions" class="hero__form--create__exercise__field textarea" placeholder="Instructions" type="text"
+        minlength="1" maxlength="65535" required value=""></textarea>
 
         <button type="submit" class="hero__create__exercise--submit btn">Submit</button>
       </form>
