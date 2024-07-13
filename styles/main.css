@@ -78,6 +78,19 @@ body {
   visibility: hidden;
 }
 
+.header__buttons_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__btn {
+  list-style-type: none;
+}
+
 .btn {
   background-color: transparent;
   border: none;
