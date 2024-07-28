@@ -95,12 +95,6 @@
     padding: 5rem 0 3rem;
   }
 
-  .category__name--women:hover {
-    color: var(--color-primary);
-    cursor: pointer;
-    transition: color 250ms ease-in-out;
-  }
-
   .shop--women {
     justify-content: center;
     width: 95%;
@@ -195,6 +189,12 @@
   .header .btn:hover {
     background-color: transparent;
     border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+  }
+
+  .category__name--women:hover {
+    color: var(--color-primary);
     cursor: pointer;
     transition: color 250ms ease-in-out;
   }

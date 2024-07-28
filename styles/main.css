@@ -31,6 +31,8 @@
 @import url("./legs-old.css");
 @import url("./shoulders.css");
 @import url("./resource-not-found.css");
+@import url("./product.css");
+
 
 :root {
   --color-primary: #ffdd4d;

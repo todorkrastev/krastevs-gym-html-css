@@ -24,18 +24,6 @@
         <img src="/imgs/logo/logo.png" class="header__logo" alt="Logo" />
       </a>
       <nav class="header__navigation">
-        <!-- <div id="guest">
-          <a href="/users/login" class="btn">Sign in</a>
-          <a href="/users/login" class="btn">Log in</a>
-        </div> -->
-
-        <!--<div id="user">
-          <a href="/users/login" class="btn">Classes</a>
-          <a href="/users/login" class="btn">Exercises</a>
-          <a href="/users/login" class="btn">Products</a>
-          <a href="/users/login" class="btn"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
         <div id="admin">
           <a href="/users/login" class="btn">My Trainer</a>
           <a href="/exercise.html" class="btn">Exercises</a>
@@ -46,85 +34,70 @@
           <a href="/users/login" class="icon btn"><i class="fa-solid fa-circle-user"></i></a>
         </div>
 
-        <!-- <div id="admin" class="navigation__container">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Activites</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Applicants</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Classes</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Exercises</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="btn">Products</a>
-            </li>
-            <li class="navigation__item">
-              <a href="/users/login" class="basket btn"><i class="fas fa-shopping-basket"></i></a>
-            </li>
-          </ul>
-        </div>-->
-
       </nav>
     </div>
 
   </header>
 
   <main>
-    <section id="hero">
-      <img src="/imgs/hero/shop.jpg" class="img--bg--shop" alt="Background poster" />
+    <section class="product">
+      <div class="slideshow__container product__wrapper--picture">
+        <div class="slides fade">
+          <img src="./imgs/shop/shop-women/cycling-pants-black.jpg" alt="Product image">
+        </div>
 
-      <div class="hero__products">
-        <h1 class="hero__title__products">Shop</h1>
+        <div class="slides fade">
+          <img src="./imgs/shop/shop-women/top-brown.jpg" alt="Product image">
+        </div>
 
-        <div class="hero__products__subtitles">
-          <p class="hero__products__subtitle">Welcome to our online store!</p>
-          <p class="hero__products__subtitle">Here you have a wide selection of products specially selected for you by
-            us.
-          </p>
-          <p class="hero__products__subtitle">Useful fitness accessories, the perfect clothes for your workout and
-            useful
-            tips on your
-            diet.</p>
-          <p class="hero__products__subtitle">You can pick up your order in your Krastev's Gym, or have it conveniently
-            delivered to
-            your home.</p>
+        <div class="slides fade">
+          <img src="./imgs/shop/shop-women/shorts-pink.jpg" alt="Product image">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+      <!-- <div class="product__wrapper--picture">
+        <img src="./imgs/shop/shop-women/cycling-pants-black.jpg" alt="Product image">
+      </div> -->
+      <div class="product__wrapper__info">
+        <div class="product__wrapper--short__info">
+          <h2 class="product__title">Cycling Pants Black</h2>
+          <div class="product__price__currency__wrapper">
+            <p class="product__price">29.99</p>
+            <select id="currency" class="product__currency" name="size" id="size">
+              <option class="product__currency__drop" value="EUR">EUR</option>
+              <option class="product__currency__drop" value="CHF">CHF</option>
+              <option class="product__currency__drop" value="USD">USD</option>
+            </select>
+          </div>
+          <p class="product__description">The cycling pants are made of a high-quality material that is breathable and
+            moisture-wicking. The pants are perfect for cycling, running, and other sports activities. The pants are
+            available in black and white.</p>
+        </div>
+        <div class="product__warpper--form">
+          <form class="product__form" action="/shop.html" method="post">
+            <select class="product__size" name="size" id="size">
+              <option class="product__size__drop" value="" disabled selected>Select Size</option>
+              <option class="product__size__drop" value="xs">XS</option>
+              <option class="product__size__drop" value="s">S</option>
+              <option class="product__size__drop" value="m">M</option>
+              <option class="product__size__drop" value="l">L</option>
+              <option class="product__size__drop" value="xl">XL</option>
+            </select>
+            <button type="submit" class="btn--product">Add to Cart</button>
+          </form>
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
-
-
-    <section id="shop" class="shop section">
-      <div class="shop__wrapper">
-        <a href="./shop-women.html" class="shop__card">
-          <img src="./imgs/shop/shop-women/" alt="product" class="shop__poster">
-          <h2 class="shop__title">Women</h2>
-        </a>
-        <a href="./shop-men.html" class="shop__card">
-          <img src="./imgs/shop/shop-men/shop-men.jpg" alt="product" class="shop__poster">
-          <h2 class="shop__title">Men</h2>
-        </a>
-        <!--<div class="shop__card">
-          <img src="./imgs/shop-women.jpg" alt="product" class="shop__poster">
-          <h2 class="shop__title">Women</h2>
-        </div>
-
-        <div class="shop__card">
-          <img src="./imgs/shop-men.jpg" alt="product" class="shop__poster">
-          <h2 class="shop__title">Men</h2>
-        </div>-->
-      </div>
-
-    </section>
-
-    <div class="divider"></div>
-
 
   </main>
 
@@ -206,7 +179,9 @@
     </div>
   </footer>
 
-  <script src="/js/index.js"></script>
+  <!-- <script src="/js/index.js"></script> -->
+  <!-- <script src="/js/index.js"></script> -->
+  <script src="./js/slideshow.js"></script>
 </body>
 
 </html>
