@@ -39,60 +39,34 @@
   </header>
 
   <main>
-    <section class="product">
-      <div class="slideshow__container product__wrapper--picture">
-        <div class="slides fade">
-          <img src="./imgs/shop/shop-women/cycling-pants-black.jpg" alt="Product image">
-        </div>
-
-        <div class="slides fade">
-          <img src="./imgs/shop/shop-women/top-brown.jpg" alt="Product image">
-        </div>
-
-        <div class="slides fade">
-          <img src="./imgs/shop/shop-women/shorts-pink.jpg" alt="Product image">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-      </div>
-      <!-- <div class="product__wrapper--picture">
-        <img src="./imgs/shop/shop-women/cycling-pants-black.jpg" alt="Product image">
-      </div> -->
-      <div class="product__wrapper__info">
-        <div class="product__wrapper--short__info">
-          <h2 class="product__title">Cycling Pants Black</h2>
-          <div class="product__price__currency__wrapper">
-            <p class="product__price">29.99</p>
-            <select id="currency" class="product__currency" name="size" id="size">
-              <option class="product__currency__drop" value="EUR">EUR</option>
-              <option class="product__currency__drop" value="CHF">CHF</option>
-              <option class="product__currency__drop" value="USD">USD</option>
-            </select>
+    <section class="team">
+      <div class="team__wrapper">
+        <a href="/" class="team__container">
+          <div class="wrapper__card">
+            <img src="./imgs/team/shop-men.jpg" alt="Avatar" class="team__image" style="width:100%">
+            <div class="team__wrapper__info">
+              <h6 class="team__name">Belmondo Smith</h6>
+              <p class="team__position">Studio Management</p>
+            </div>
           </div>
-          <p class="product__description">The cycling pants are made of a high-quality material that is breathable and
-            moisture-wicking. The pants are perfect for cycling, running, and other sports activities. The pants are
-            available in black and white.</p>
-        </div>
-        <div class="product__warpper--form">
-          <form class="product__form" action="/shop.html" method="post">
-            <select class="product__size" name="size" id="size">
-              <option class="product__size__drop" value="" disabled selected>Select Size</option>
-              <option class="product__size__drop" value="xs">XS</option>
-              <option class="product__size__drop" value="s">S</option>
-              <option class="product__size__drop" value="m">M</option>
-              <option class="product__size__drop" value="l">L</option>
-              <option class="product__size__drop" value="xl">XL</option>
-            </select>
-            <button type="submit" class="btn--product">Add to Cart</button>
-          </form>
-        </div>
+          <div class="team__wrapper__info--middle">
+            <h6 class="team__name">Belmondo Smith</h6>
+            <p class="team__position">Studio Management</p>
+          </div>
+        </a>
+        <a href="/" class="team__container">
+          <div class="wrapper__card">
+            <img src="./imgs/team/shop-women.jpg" alt="Avatar" class="team__image" style="width:100%">
+            <div class="team__wrapper__info">
+              <h6 class="team__name">Gisella Wesson</h6>
+              <p class="team__position">Head of Trainers</p>
+            </div>
+          </div>
+          <div class="team__wrapper__info--middle">
+            <h6 class="team__name">Gisella Wesson</h6>
+            <p class="team__position">Head of Trainers</p>
+          </div>
+        </a>
       </div>
     </section>
 
