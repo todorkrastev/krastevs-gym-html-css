@@ -37,6 +37,7 @@
 @import url("./admin.css");
 @import url("./activity-create.css");
 @import url("./activity-details.css");
+@import url("./profile.css");
 
 :root {
   --color-primary: #ffdd4d;
